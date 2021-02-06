@@ -1,0 +1,10 @@
+[package]
+name = "backend"
+version = "0.1.0"
+authors = ["Francois Stephany <francois@tamere.eu>"]
+edition = "2018"
+
+[dependencies]
+# Wait for 0.5 release
+rocket = { git = "https://github.com/SergioBenitez/Rocket", branch = "master" }
+rocket_contrib = { git = "https://github.com/SergioBenitez/Rocket", branch = "master", features = ["tera_templates"] }
