@@ -17,3 +17,7 @@ Goals:
 
     # Setup cargo workspace with three crate: `backend`, `frontend`, `run`
     
+    # does not start. It will loop forever displaying ``
+    # `Finished dev [unoptimized + debuginfo] target(s) in 0.03s`
+    # until the inotify limit is reached.
+    $ cargo run --bin run

@@ -4,3 +4,6 @@ version = "0.1.0"
 authors = ["Francois Stephany <francois@tamere.eu>"]
 edition = "2018"
 
+[dependencies]
+structopt = "0.3"
+wasm-run = { version = "0.8", default-features = false, features = [] }
