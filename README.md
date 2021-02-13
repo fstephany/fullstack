@@ -12,12 +12,16 @@ Goals:
 
 ## Logs
 
+Just keep an eye on what I've tried and played with.
+
+
     $ cargo new fullstack
     $ cd fullstack
 
     # Setup cargo workspace with three crate: `backend`, `frontend`, `run`
     
+    # No arguments passed:
+    $ cargo run --bin run
     # does not start. It will loop forever displaying ``
     # `Finished dev [unoptimized + debuginfo] target(s) in 0.03s`
     # until the inotify limit is reached.
-    $ cargo run --bin run
