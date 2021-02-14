@@ -66,6 +66,12 @@ Q: Oh! its the `post_build` step that writes the wasm+js to disk.
 Q: Is the anyhow requirement appropriate? I guess we can afford it as the scope
 is quite reduced?
 
+Q: Oh ok, in the backend example in wasm-run, the binary (let's call it `main`)
+is dependent on the backend and runs it from there. This means
+* the backend must be startable from outside its main (what about dotenv for example?)
+* it can be started without using an external process. As *it is* the running process.
+* 
+
 ## Ideas
 
 - I feel like hooks should be different than steps. A hook should not overwrite
