@@ -174,6 +174,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "cc"
+version = "1.0.66"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4c0496836a84f8d0495758516b8621a622beb77c0fed418570e50764093ced48"
+
+[[package]]
 name = "cfg-if"
 version = "0.1.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1119,6 +1125,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8b870d8c151b6f2fb93e84a13146138f05d02ed11c7e7c54f8826aaaf7c9f184"
 
 [[package]]
+name = "pkg-config"
+version = "0.3.19"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3831453b3449ceb48b6d9c7ad7c96d5ea673e9b470a1dc578c2ce6521230884c"
+
+[[package]]
 name = "ppv-lite86"
 version = "0.2.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1458,6 +1470,28 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "93fc1dc3aaa9bfed95e02e6eadabb4baf7e3078b0bd1b4d7b6b0b68378900502"
 dependencies = [
  "winapi-util",
+]
+
+[[package]]
+name = "sass-rs"
+version = "0.2.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cabcf7c6e55053f359911187ac401409aad2dc14338cae972dec266fee486abd"
+dependencies = [
+ "libc",
+ "sass-sys",
+]
+
+[[package]]
+name = "sass-sys"
+version = "0.4.21"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0df9ac0fd0b8d62a99b9948094dcd56c441e3e10bf49f9b12da40b2183804908"
+dependencies = [
+ "cc",
+ "libc",
+ "num_cpus",
+ "pkg-config",
 ]
 
 [[package]]
@@ -2205,7 +2239,9 @@ dependencies = [
  "futures",
  "notify",
  "once_cell",
+ "sass-rs",
  "structopt",
+ "walkdir",
  "wasm-bindgen-cli-support",
  "wasm-run-proc-macro",
 ]

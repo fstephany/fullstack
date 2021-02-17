@@ -102,4 +102,14 @@ is dependent on the backend and runs it from there. This means
   demonstrate two separates things?
 - We could mention the alternative in the README (trunk, cargo-make). Or even
   maybe the whole WASM pieces and how the ecosystem works (websys, bindgen)
-  
+
+
+### Sass questions
+
+- Hook for Sass is incorrect in documentation  args.sass_lookup_directories() should have one argument.
+- Sass lookup directory should be overwritable? Right now
+  sass_lookup_directories() only looks up in the 'frontend' directory.
+- Compile Sass files one by one? Cannot concatenate all of them into one css?
+
+We should provide entry points for sass and not compiled everything under the
+sun.

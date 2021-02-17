@@ -6,4 +6,5 @@ edition = "2018"
 
 [dependencies]
 structopt = "0.3"
-wasm-run = { version = "0.8", default-features = false, features = [] }
+wasm-run = { version = "0.8", default-features = false, features = ["sass"] }
+
