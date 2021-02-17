@@ -69,7 +69,7 @@ is quite reduced?
 Q: Oh ok, in the backend example in wasm-run, the binary (let's call it `main`)
 is dependent on the backend and runs it from there. This means
 * the backend must be startable from outside its main (what about dotenv for example?)
-* it can be started without using an external process. As *it is* the running process.
+* it can be started without using an external process. As *it is* the running   process.
 * 
 
 ## Ideas
@@ -102,3 +102,4 @@ is dependent on the backend and runs it from there. This means
   demonstrate two separates things?
 - We could mention the alternative in the README (trunk, cargo-make). Or even
   maybe the whole WASM pieces and how the ecosystem works (websys, bindgen)
+  
